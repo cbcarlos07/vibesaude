@@ -22,4 +22,8 @@ public class HorarioService {
     public List<Horario> findByData(Date data){
         return rep.findByData( data );
     }
+
+    public List<Horario> findByDoctor(Long id){
+        return rep.findByDoctor(id);
+    }
 }

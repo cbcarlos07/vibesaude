@@ -6,10 +6,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
+
 public class MedicoEspecialidadeDTO {
     private Long id;
     private String nome;
     private String crm;
-    private String descricao;
+    private String especialidade;
+    public MedicoEspecialidadeDTO(Long id, String nome, String crm, String descricao){
+        this.id = id;
+        this.nome = nome;
+        this.crm = crm;
+        this.especialidade = descricao;
+    }
 }

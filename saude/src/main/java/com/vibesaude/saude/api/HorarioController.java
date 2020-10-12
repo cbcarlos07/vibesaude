@@ -29,4 +29,9 @@ public class HorarioController {
         return service.findByData( data );
     }
 
+    @GetMapping("/doctor/{id}")
+    public Iterable<Horario> findByDoctor( @PathVariable("id") Long id ){
+        return service.findByDoctor(id);
+    }
+
 }

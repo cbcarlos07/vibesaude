@@ -15,7 +15,7 @@ public interface MedicoRepository extends JpaRepository<Medico, Long> {
     List<Medico> findByNomeContaining(String nome);
 
     @Query(value = "select new com.vibesaude.saude.domain.dto.MedicoEspecialidadeDTO(m.id, m.nome, m.crm, e.descricao) " +
-            "from Medico m " +
+            "from com.vibesaude.saude.domain.models.Medico m " +
             "inner join m.especialidade e")
     List<MedicoEspecialidadeDTO> findByMedicoEspecialidade();
 }
