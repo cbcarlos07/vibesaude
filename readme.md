@@ -66,8 +66,8 @@ Para simular que o paciente já está logado
     REACT_APP_PACIENTE=1
     REACT_APP_MEDICO=5
 
-A página incial é pesquisa do sistema    
+A página incial é a pesquisa do sistema    
     
-
+![alt text](https://github.com/cbcarlos07/vibesaude/blob/master/imagens/inicial.png)
 
 
