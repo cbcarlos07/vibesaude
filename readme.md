@@ -70,4 +70,12 @@ A página incial é a pesquisa do sistema
     
 ![alt text](https://github.com/cbcarlos07/vibesaude/blob/master/imagens/inicial.png)
 
+* Lista de Médicos
+
+ Após digitar e clicar no botao `Médico` o sistema irá a busca dos prestadores com contenham aquele nome, acionando a seguinte rota do backend
+ 
+    http://localhost:8080/api/v1/medico/:nome
+
+![alt text](https://github.com/cbcarlos07/vibesaude/blob/master/imagens/listamedicos.png)    
+
 
