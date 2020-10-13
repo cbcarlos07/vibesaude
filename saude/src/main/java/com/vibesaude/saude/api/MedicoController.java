@@ -31,4 +31,9 @@ public class MedicoController {
         return service.search( nome );
     }
 
+    @GetMapping("/especialidade/{id}")
+    public Iterable<Medico> findByMedicoPorEspecialidade( @PathVariable("id") long id ){
+        return service.findByMedicoPorEspecialidade(id);
+    }
+
 }

@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 
+import javax.websocket.server.PathParam;
 import java.util.List;
 
 @Repository
@@ -18,4 +19,10 @@ public interface MedicoRepository extends JpaRepository<Medico, Long> {
             "from com.vibesaude.saude.domain.models.Medico m " +
             "inner join m.especialidade e")
     List<MedicoEspecialidadeDTO> findByMedicoEspecialidade();
+
+    @Query(value = "select m  " +
+            " from com.vibesaude.saude.domain.models.Medico m " +
+            " inner join m.especialidade e" +
+            " where e.id = :id")
+    List<Medico> findByMedicoPorEspecialidade(@PathParam("id") long id);
 }

@@ -9,7 +9,7 @@ import java.util.Date;
 @Entity(name = "horarios")
 public class Horario {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private Date data;
     private Date hora;

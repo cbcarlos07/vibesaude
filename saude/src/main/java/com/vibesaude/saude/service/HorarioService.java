@@ -1,6 +1,8 @@
 package com.vibesaude.saude.service;
 
+import com.vibesaude.saude.domain.dto.HorarioOcupadoDTO;
 import com.vibesaude.saude.domain.models.Horario;
+import com.vibesaude.saude.domain.models.HorarioAgendado;
 import com.vibesaude.saude.repository.HorarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,4 +28,9 @@ public class HorarioService {
     public List<Horario> findByDoctor(Long id){
         return rep.findByDoctor(id);
     }
+
+    public List<HorarioAgendado>findBusy(Long id){
+        return rep.findBusy( id );
+    }
+
 }

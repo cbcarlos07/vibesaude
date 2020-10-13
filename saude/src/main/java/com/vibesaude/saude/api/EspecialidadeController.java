@@ -1,12 +1,12 @@
 package com.vibesaude.saude.api;
 
+import com.vibesaude.saude.domain.dto.EspecialidadeDTO;
 import com.vibesaude.saude.domain.models.Especialidade;
 import com.vibesaude.saude.service.EspecialidadeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/v1/especialidade")
 public class EspecialidadeController {
@@ -17,6 +17,11 @@ public class EspecialidadeController {
     @GetMapping
     public Iterable<Especialidade> findAll(){
         return service.findAll();
+    }
+
+    @GetMapping("/{nome}")
+    public  Iterable<EspecialidadeDTO> search(@PathVariable("nome") String nome){
+        return service.search(nome);
     }
 
 

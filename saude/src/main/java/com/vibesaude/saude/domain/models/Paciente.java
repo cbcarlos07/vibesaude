@@ -9,7 +9,7 @@ import java.util.Date;
 @Data
 public class Paciente {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nome;
     @Column(name = "dt_nascimento")
