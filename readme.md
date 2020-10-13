@@ -85,7 +85,22 @@ A página incial é a pesquisa do sistema
  
 ![alt text](https://github.com/cbcarlos07/vibesaude/blob/master/imagens/agenda.png)
 
+* Lista de Pacintes
 
-## <a id="intro">Introdução
+Para o médico é preciso acessar a url
+
+        http://localhost:3000/prestador
+
+ Após preencher os parâmetros para pesquisa irá carregar tabela com os dados dos pacientes
+ 
+![alt text](https://github.com/cbcarlos07/vibesaude/blob/master/imagens/listapacientes.png)
+
+
+## <a id="db">Banco de Dados
+
+O banco de dados usado foi o MySQL 8.0
+
+Na pasta [db](https://github.com/cbcarlos07/vibesaude/tree/master/db) deste projeto encontram-se o MER (Modelo Entidade Relacionamento) e o arquivo sql.sql com inserts já realizados
+
 
 
