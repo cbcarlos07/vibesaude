@@ -4,7 +4,7 @@ import env from '../environments'
 import { useHistory } from 'react-router-dom'
 import api from '../services/api'
 import { Base64 } from 'js-base64'
-
+import './style.css'
 const Prestador = () => {
     const [data, setData] = useState()
     const [pacientes, setPaciente] =  useState([])
