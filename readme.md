@@ -105,6 +105,8 @@ O banco de dados usado foi o MySQL 8.0
 
 Na pasta [db](https://github.com/cbcarlos07/vibesaude/tree/master/db) deste projeto encontram-se o MER (Modelo Entidade Relacionamento) e o arquivo sql.sql com inserts já realizados
 
+![alt text](https://github.com/cbcarlos07/vibesaude/blob/master/imagens/mer.png)
+
 [Voltar ao inicio](#begin)
 
 
