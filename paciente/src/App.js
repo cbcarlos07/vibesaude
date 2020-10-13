@@ -35,16 +35,19 @@ const App = () => {
 				value={formData.texto}
 			/>
 			</div>
-			<button 
-				className="btn btn-primary"
-				onClick={() => handleSubmit("medico")}
-				>
-				Médico
-			</button>&nbsp;
-			<button 
-				className="btn btn-success"
-				onClick={() => handleSubmit("especialidade")}
-			>Especialidade</button>
+			<div className="botoes">
+				
+				<button 
+					className="btn btn-primary"
+					onClick={() => handleSubmit("medico")}
+					>
+					Médico
+				</button>&nbsp;
+				<button 
+					className="btn btn-success"
+					onClick={() => handleSubmit("especialidade")}
+				>Especialidade</button>
+			</div>
 			</div>
 		</div>
 		);
