@@ -1,4 +1,4 @@
-# <a id="begin">Desfaio VibeSaúde
+# <a id="begin">Desafio VibeSaúde
 
 ## [Introdução](#intro)
 ## [Rotas do Backend](#rotab)
